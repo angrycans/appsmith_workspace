@@ -6,7 +6,7 @@
     "labelWidth": 5,
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mod.store.propertyData.length-1==currentIndex?mod.store.propertyData[currentIndex].property:\"\"))(Select1.options, Select1.serverSideFiltering) }}",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( currentItem.property))(Select1.options, Select1.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 0,
     "dynamicBindingPathList": [
@@ -60,6 +60,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "",
+    "onOptionChange": "{{\nconsole.log(\"currentItem\",currentItem);\nconsole.log(\"select1\",Select1.value)\n//\nmod.store.propertyData[currentIndex].property=Select1.value\n}}",
     "minDynamicHeight": 4
 }

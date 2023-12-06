@@ -7,7 +7,7 @@
     "topRow": 22,
     "pageSize": 5,
     "type": "LIST_WIDGET_V2",
-    "itemSpacing": "2",
+    "itemSpacing": "1",
     "animateLoading": true,
     "dynamicBindingPathList": [
         {"key": "currentItemsView"},
