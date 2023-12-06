@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "mod",
+    "pageId": "创建对象",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "microflow_global_object",
+        "value": "[\"NewObject03\", \"NewObject0103\"]"
+      },
+      {
+        "name": "source_object",
+        "value": "[{\n  property: \"id\",\n  value: \"id\"\n}, {\n  property: \"name\",\n  value: \"name\"\n}]"
+      },
+      {
+        "name": "store",
+        "value": "{\n  objectName: \"\",\n  isSubmit: false,\n  iseventTrigger: false,\n  propertyData: [{\n    key: 0,\n    property: \"\",\n    value: \"\"\n  }]\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "创建对象_mod",
+  "deleted": false,
+  "gitSyncId": "656d34f160d43277de27b86f_656d3b707cc83c64328e6727"
+}

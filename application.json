@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "id": "创建对象",
+      "isDefault": true
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    }
+  },
+  "color": "#F1DEFF",
+  "icon": "bus",
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "publishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "ace_https://cdn.jsdelivr.net/npm/ace-builds@1.19.0/src-min-noconflict/ace.min.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}
