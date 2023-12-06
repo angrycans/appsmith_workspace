@@ -17,8 +17,8 @@ export default {
 		propertyData: [
 			{
 				key:0,
-				property:"",
-				value:""
+				property:"name",
+				value:"test"
 			}]
 	},
 	setObjectName:()=>{

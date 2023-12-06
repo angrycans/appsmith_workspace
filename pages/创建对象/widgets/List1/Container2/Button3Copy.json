@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 8,
     "widgetName": "Button3Copy",
-    "onClick": "{{console.log(List1.triggeredItem)\nmod.store.propertyData.forEach((item, index) => {\n  if (item.key === List1.triggeredItem.key) {\n    // 如果找到匹配的 key，直接在源数据上删除\n    mod.store.propertyData.splice(index, 1);\n  }\n});\n\n}}",
+    "onClick": "{{console.log(List1.triggeredItem)\nmod.store.propertyData.forEach((item, index) => {\n  if (item.key === List1.triggeredItem.key) { mod.store.propertyData.splice(index, 1);\n  }\n});\n\n}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",

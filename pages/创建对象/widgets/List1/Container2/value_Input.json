@@ -29,6 +29,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileBottomRow": 9,
     "widgetName": "value_Input",
+    "dynamicPropertyPathList": [{"key": "onTextChanged"}],
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -42,10 +43,11 @@
     "hideCard": false,
     "mobileRightColumn": 56,
     "parentColumnSpace": 5.7177734375,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onTextChanged"}],
     "labelPosition": "Top",
     "key": "yhaxajbtqe",
     "labelTextSize": "0.875rem",
+    "onTextChanged": "{{\nconsole.log(\"currentIdx\",currentIndex);\nconsole.log(\"mod value\",mod.store.propertyData[currentIndex].value);\nconsole.log(\"input value\",List1.triggeredItemView.value_Input);\nmod.store.propertyData[currentIndex].value=List1.triggeredItemView.value_Input.text}}",
     "isDeprecated": false,
     "rightColumn": 51,
     "widgetId": "a4hp6fmved",
@@ -59,6 +61,6 @@
     "mobileLeftColumn": 36,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{mod.store.propertyData[currentIndex].value}}",
+    "defaultText": "{{currentIndex>-1?mod.store.propertyData[currentIndex].value:\"\"}}",
     "minDynamicHeight": 4
 }

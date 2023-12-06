@@ -3,9 +3,9 @@
     "boxShadow": "none",
     "mobileBottomRow": 8,
     "widgetName": "Button3",
-    "onClick": "{{navigateTo('表达式编辑框', {}, 'SAME_WINDOW');}}",
+    "onClick": "{{console.log(currentIndex,mod.store.propertyData[currentIndex]);\n\nconsole.log(mod.store.propertyData[currentIndex].value,List1.triggeredItemView.value_Input.text)\n\n}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [

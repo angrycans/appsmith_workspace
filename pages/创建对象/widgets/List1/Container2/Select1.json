@@ -6,13 +6,14 @@
     "labelWidth": 5,
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mod.store.propertyData.length-1==currentIndex?mod.store.propertyData[currentIndex].property:\"\"))(Select1.options, Select1.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "sourceData"}
+        {"key": "sourceData"},
+        {"key": "defaultOptionValue"}
     ],
     "placeholderText": "",
     "isDisabled": false,
@@ -30,7 +31,10 @@
     "mobileBottomRow": 10,
     "widgetName": "Select1",
     "isFilterable": false,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
+    "dynamicPropertyPathList": [
+        {"key": "sourceData"},
+        {"key": "onOptionChange"}
+    ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 4,
@@ -38,7 +42,7 @@
     "hideCard": false,
     "mobileRightColumn": 21,
     "parentColumnSpace": 5.7646484375,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Top",
     "sourceData": "{{mod.source_object}}",
     "key": "8g0mkqx9b7",
@@ -46,7 +50,7 @@
     "isDeprecated": false,
     "rightColumn": 24,
     "widgetId": "bgspxgfbcg",
-    "optionValue": "property",
+    "optionValue": "value",
     "minWidth": 450,
     "parentId": "6rk54ladxq",
     "labelAlignment": "left",
@@ -56,5 +60,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
+    "onOptionChange": "",
     "minDynamicHeight": 4
 }

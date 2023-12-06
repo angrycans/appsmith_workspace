@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 67,
     "widgetName": "Button4",
-    "onClick": "{{console.log(mod.store);\nconsole.log(mod.setObjectName(\"\"))\nconsole.log(Switch1)\n\n}}",
+    "onClick": "{{console.log(mod.store);\n\nconsole.log(List1.selectedItemView)\n\n}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",
